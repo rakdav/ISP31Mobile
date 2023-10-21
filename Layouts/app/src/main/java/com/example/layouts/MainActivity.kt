@@ -9,6 +9,7 @@ class MainActivity : AppCompatActivity() {
 //        setContentView(R.layout.activity_relaytive)
 //        setContentView(R.layout.activity_linear)
 //        setContentView(R.layout.activity_table)
-        setContentView(R.layout.activity_grid)
+        //setContentView(R.layout.activity_grid)
+        setContentView(R.layout.activity_scroll)
     }
 }
