@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">CalculatorBarmen</string>
+    <string name="table_number">Введите номер стола</string>
+</resources>
