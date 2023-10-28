@@ -8,18 +8,29 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_weight="0.8"
+        android:id="@+id/name"
         android:hint="@string/dish"
         />
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_weight="1"
+        android:id="@+id/price"
+        android:inputType="numberDecimal"
         android:hint="@string/price"
         />
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_weight="1"
+        android:inputType="number"
+        android:id="@+id/count"
         android:hint="@string/count"
         />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="X"
+        android:layout_weight="1"
+        android:id="@+id/del"/>
 </LinearLayout>
