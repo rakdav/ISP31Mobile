@@ -11,7 +11,7 @@
         android:layout_height="wrap_content"
         android:id="@+id/order_cv"
         app:cardCornerRadius="20dp">
-        <TextView
+        <TableLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/orders_list"/>
@@ -20,17 +20,23 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/seek"
+        android:progress="0"
+        android:max="20"
         android:layout_below="@+id/order_cv"
         />
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
+        android:gravity="center_horizontal"
+        android:textSize="30sp"
         android:id="@+id/total"/>
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_above="@+id/total"
+        android:gravity="center_horizontal"
+        android:textSize="30sp"
         android:id="@+id/tip"/>
 
 </RelativeLayout>

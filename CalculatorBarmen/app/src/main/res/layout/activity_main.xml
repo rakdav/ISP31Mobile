@@ -13,6 +13,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:textColor="#FFFFFF"
+        android:inputType="number"
         android:id="@+id/tableNumber"
         android:hint="@string/table_number"/>
     <androidx.cardview.widget.CardView

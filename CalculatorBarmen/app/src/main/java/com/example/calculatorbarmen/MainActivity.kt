@@ -51,6 +51,7 @@ class MainActivity : AppCompatActivity() {
                 var gson:Gson= Gson()
                 val ordersGson=gson.toJson(foods)
                 val intent:Intent=Intent(applicationContext,OrderActivity::class.java)
+                intent.putExtra("table_number",TableName.text.toString())
                 intent.putExtra("orders",ordersGson)
                 startActivity(intent)
             }
