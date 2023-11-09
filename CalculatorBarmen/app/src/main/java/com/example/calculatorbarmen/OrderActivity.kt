@@ -1,10 +1,12 @@
 package com.example.calculatorbarmen
 
 import android.annotation.SuppressLint
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.Gravity
 import android.widget.AbsSeekBar
+import android.widget.Button
 import android.widget.SeekBar
 import android.widget.TableLayout
 import android.widget.TableRow
@@ -17,7 +19,8 @@ class OrderActivity : AppCompatActivity() {
     private lateinit var seek: SeekBar
     private lateinit var tip:TextView
     private lateinit var total:TextView
-    @SuppressLint("SetTextI18n")
+    private lateinit var ok:Button
+    @SuppressLint("SetTextI18n", "MissingInflatedId")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_order)
@@ -25,6 +28,7 @@ class OrderActivity : AppCompatActivity() {
         seek=findViewById(R.id.seek)
         tip=findViewById(R.id.tip)
         total=findViewById(R.id.total)
+        ok=findViewById(R.id.returnRes)
         val arguments:Bundle = intent.extras!!
         if(arguments!=null)
         {
@@ -78,6 +82,12 @@ class OrderActivity : AppCompatActivity() {
                 }
 
             })
+            ok.setOnClickListener {
+                val data = Intent();
+                data.putExtra("total",total.text.toString())
+                setResult(RESULT_OK,data)
+                finish()
+            }
             tip.text="Чаевые:"+0.0
             total.text= "Итого:$sum"
         }
