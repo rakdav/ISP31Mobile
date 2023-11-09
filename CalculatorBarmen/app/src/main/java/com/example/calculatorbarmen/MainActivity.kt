@@ -27,7 +27,8 @@ class MainActivity : AppCompatActivity() {
     private lateinit var views:MutableList<View>
     private lateinit var totalPrice:TextView
     @SuppressLint("MissingInflatedId")
-    override fun onCreate(savedInstanceState: Bundle?) {
+    override fun onCreate(savedInstanceState: Bundle?)
+    {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         TableName=findViewById(R.id.tableNumber)
@@ -38,9 +39,6 @@ class MainActivity : AppCompatActivity() {
         views= mutableListOf()
         fab.setOnClickListener{
             var view:View = layoutInflater.inflate(R.layout.order_item,null)
-            var name:EditText=view.findViewById(R.id.name)
-            var counts:EditText=view.findViewById(R.id.count)
-            var price:EditText=view.findViewById(R.id.price)
             var del:Button=view.findViewById(R.id.del)
             del.setOnClickListener{
                 (view.parent as LinearLayout).removeView(view)

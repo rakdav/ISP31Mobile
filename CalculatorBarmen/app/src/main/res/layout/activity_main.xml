@@ -54,7 +54,7 @@
         android:id="@+id/totalprice"
         android:textSize="25sp"
         android:layout_toRightOf="@id/OKorder"
-        android:layout_margin="20dp"
+        android:layout_marginRight="10dp"
         android:layout_alignParentBottom="true"
         />
 
