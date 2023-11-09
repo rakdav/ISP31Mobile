@@ -43,7 +43,7 @@ class OrderActivity : AppCompatActivity() {
                 LayoutParams(TableRow.LayoutParams.MATCH_PARENT,
                     TableRow.LayoutParams.WRAP_CONTENT,0.5f))
 
-                val textCount:TextView=TextView(this)
+                val textCount=TextView(this)
                 textCount.textSize = 30.0f
                 textCount.gravity=Gravity.CENTER
                 textCount.text=i.count.toString()
@@ -51,7 +51,7 @@ class OrderActivity : AppCompatActivity() {
                 LayoutParams(TableRow.LayoutParams.MATCH_PARENT,
                     TableRow.LayoutParams.WRAP_CONTENT,0.5f))
 
-                val textPrice:TextView=TextView(this)
+                val textPrice=TextView(this)
                 textPrice.textSize = 30.0f
                 textPrice.gravity=Gravity.CENTER
                 textPrice.text=i.price.toString()

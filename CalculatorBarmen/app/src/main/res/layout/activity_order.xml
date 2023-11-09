@@ -27,8 +27,8 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
         android:gravity="center_horizontal"
+        android:layout_above="@id/ok"
         android:textSize="30sp"
         android:id="@+id/total"/>
     <TextView
@@ -38,5 +38,10 @@
         android:gravity="center_horizontal"
         android:textSize="30sp"
         android:id="@+id/tip"/>
-
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ok"
+        android:text="Ok"
+        android:layout_alignParentBottom="true"/>
 </RelativeLayout>

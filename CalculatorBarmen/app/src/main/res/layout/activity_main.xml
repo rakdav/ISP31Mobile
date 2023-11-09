@@ -46,7 +46,7 @@
         android:layout_alignParentBottom="true"
         android:id="@+id/OK"
         android:textSize="25sp"
-        android:text="OK"
+        android:text="@string/order"
         />
 
 </RelativeLayout>
