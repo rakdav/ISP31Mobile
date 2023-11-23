@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">CalculatorBarmen</string>
+    <string name="app_name">Калькулятор бармена</string>
     <string name="table_number">Введите номер стола</string>
     <string name="dish">Блюдо</string>
     <string name="price">Цена</string>
