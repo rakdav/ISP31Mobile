@@ -17,6 +17,7 @@ class MainActivity : AppCompatActivity() {
     private lateinit var buttonMult:Button
     private lateinit var buttonDiv:Button
     private lateinit var result:TextView
+    private var calculator=Calculator()
     @RequiresApi(Build.VERSION_CODES.O)
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -31,23 +32,23 @@ class MainActivity : AppCompatActivity() {
         buttonAdd.setOnClickListener {
             var first:Double=firstNumber.text.toString().toDouble()
             var second:Double=secondNumber.text.toString().toDouble()
-            result.setText("$first+$second=${first+second}")
+            result.setText("$first+$second=${calculator.Add(first,second)}")
         }
         buttonSub.setOnClickListener {
             var first:Double=firstNumber.text.toString().toDouble()
             var second:Double=secondNumber.text.toString().toDouble()
-            result.setText("$first-$second=${first-second}")
+            result.setText("$first-$second=${calculator.Sub(first,second)}")
         }
         buttonMult.setOnClickListener {
             var first:Double=firstNumber.text.toString().toDouble()
             var second:Double=secondNumber.text.toString().toDouble()
-            result.setText("$first*$second=${first*second}")
+            result.setText("$first*$second=${calculator.Mault(first,second)}")
         }
         buttonDiv.setOnClickListener {
             var first:Double=firstNumber.text.toString().toDouble()
             var second:Double=secondNumber.text.toString().toDouble()
             if(second!=0.0)
-                result.setText("$first/$second=${first/second}")
+                result.setText("$first/$second=${calculator.Div(first,second)}")
             else
             {
                 Toast.makeText(applicationContext,resources.getString(R.string.divbyzero),

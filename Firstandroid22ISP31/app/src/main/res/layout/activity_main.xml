@@ -8,20 +8,22 @@
     android:orientation="vertical"
     android:padding="16dp"
     tools:context=".MainActivity">
+
     <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
         android:id="@+id/first"
-        android:textSize="12pt"
-        android:inputType="numberDecimal"
-        android:hint="@string/first" />
-    <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/second"
+        android:hint="@string/first"
         android:inputType="numberDecimal"
-        android:textSize="12pt"
-        android:hint="@string/second" />
+        android:textSize="34sp" />
+
+    <EditText
+        android:id="@+id/second"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/second"
+        android:inputType="numberDecimal"
+        android:textSize="34sp" />
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -55,10 +57,11 @@
             android:textSize="12pt"
             android:text="/"/>
     </LinearLayout>
+
     <TextView
+        android:id="@+id/result"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:textSize="12pt"
         android:gravity="center"
-        android:id="@+id/result"/>
+        android:textSize="34sp" />
 </LinearLayout>
